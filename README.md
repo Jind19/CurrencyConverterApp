@@ -1,18 +1,33 @@
-💰 Currency Converter App
+# 💱 Currency Converter API
 
-- building a Currency Conversion REST API in Spring Boot that consumes a real external API to get exchange rates.
-- storing user-saved conversions in MongoDB Atlas, designing my app with clean architecture and validation.
-- using https://freecurrencyapi.com/ to fetch live exchange rates.
+A simple Spring Boot application that converts currency amounts using real-time exchange rates and stores the conversions in MongoDB.
 
-App functionalities
+---
 
-✅ Call the external API to get the latest rates
-✅ Calculate the converted amount
-✅ Store the conversion record in MongoDB Atlas
+## 🚀 What the App Does
 
-Building a RESTful API that supports:
+- Converts an amount from one currency to another.
+- Fetches real-time exchange rates from a currency API.
+- Stores conversion records in MongoDB.
+- Provides REST API endpoints to:
+    - Add a new conversion
+    - Retrieve one or all conversions
+    - Delete a conversion
 
-- Adding a new conversion
-- Listing all saved conversions
-- Viewing a specific conversion by ID
-- Deleting a conversion
+---
+
+## 🛠️ How to Run It
+
+### ✅ Prerequisites
+
+- Java 17+
+- Maven
+- Docker (for MongoDB, optional)
+- API key from [FreeCurrencyAPI](https://freecurrencyapi.com)
+
+### 🔧 Setup Steps
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/currency-converter-api.git
+   cd currency-converter-api
