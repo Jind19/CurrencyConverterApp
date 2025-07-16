@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CurrencyconverterApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(CurrencyconverterApplication.class, args);
 	}
 
