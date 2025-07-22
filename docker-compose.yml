@@ -1,0 +1,8 @@
+services:
+  currency_converter:
+    image: currencyconverter        # Image name (must exist locally or on Docker Hub)
+    container_name: currency_converter # Custom container name
+    ports:
+      - "8084:8084"                    # Maps host:container port
+    env_file:
+      - .env                           # Loads environment variables from .env file
